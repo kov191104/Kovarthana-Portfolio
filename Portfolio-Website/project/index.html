@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kovarthana Karthikeyan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">K</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Hi, I'm Kovarthana K</span>
+                        <span class="title-line">I Build Smart Experiences</span>
+                        <span class="title-line highlight">That Connect Data with AI</span>
+                    </h1>
+                    <p class="hero-description">
+                        Transforming complex data into meaningful insights and building 
+                        intelligent models that make a difference.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                            <span>Explore My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                            <span>Let's Connect</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="globe-container" id="globe-container">
+                        <div class="globe">
+                            <div class="globe-inner">
+                                <div class="globe-grid"></div>
+                                <div class="globe-dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orbit orbit-1">
+                            <div class="orbit-dot"></div>
+                        </div>
+                        <div class="orbit orbit-2">
+                            <div class="orbit-dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                         <div class="profile-image">
+                            <!-- <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div> -->
+                            <img src="./image/photo.jpg" alt="Kovarthana Profile Picture" class="profile-pic">
+                        </div>
+                        <div class="image-glow"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <div class="about-card">
+                        <p class="about-description">
+                            I'm a Data Analyst and ML enthusiast from Bengaluru, passionate about 
+                            transforming raw data into clear insights and interactive tools. With 
+                            hands-on experience in full-stack development, predictive modeling, and 
+                            data visualization, I bring ideas to life through clean code and meaningful design.
+                        </p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Data Visualization</span>
+                            <span class="skill-tag">Full-Stack Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">A curated list of things I've built recently</p>
+                <div class="section-line"></div>
+            </div>
+            
+            <!-- <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="ml">ML</button>
+                <button class="filter-btn" data-filter="data">Data</button>
+                <button class="filter-btn" data-filter="react">React</button>
+            </div> -->
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="ml data">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="project-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3 class="project-title">Airborne LiDAR Signal Correction</h3>
+                            <p class="project-description">
+                                Advanced signal processing using Bi-LSTM neural networks for 
+                                enhanced LiDAR data accuracy and noise reduction.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Bi-LSTM</span>
+                                <span class="tag">Signal Processing</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="project-links">
+                                <a href="https://github.com/kov191104/Airborne-LiDAR-Signal-Correction-" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <!-- <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ml">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="project-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3 class="project-title">Secure Image Reconstruction</h3>
+                            <p class="project-description">
+                                Hybrid encryption system combining DWT and RSA-AES algorithms 
+                                for secure image transmission and reconstruction.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">DWT</span>
+                                <span class="tag">RSA-AES</span>
+                                <span class="tag">Cryptography</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="project-links">
+                                <a href="https://github.com/kov191104/Secure-Multimodal-High-Fidelity-Reconstruction-with-DWT-and-RSA-AES" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <!-- <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ml">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="project-icon">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <h3 class="project-title">Brain Tumor Detection GUI</h3>
+                            <p class="project-description">
+                                MATLAB-based graphical interface for automated brain tumor 
+                                detection using advanced image processing techniques.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">MATLAB</span>
+                                <span class="tag">Image Processing</span>
+                                <span class="tag">GUI</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="project-links">
+                                <a href="https://github.com/kov191104/Brain-Tumor" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <!-- <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ml">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="project-icon">
+                                <i class="fas fa-fingerprint"></i>
+                            </div>
+                            <h3 class="project-title">Fingerprint Blood Group Classification</h3>
+                            <p class="project-description">
+                                Novel biometric system for blood group identification using 
+                                fingerprint pattern analysis and machine learning.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Biometrics</span>
+                                <span class="tag">Classification</span>
+                                <span class="tag">Pattern Recognition</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="project-links">
+                                <a href="https://github.com/kov191104/Imprints" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <!-- <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ml web">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="project-icon">
+                                <i class="fas fa-hand-paper"></i>
+                            </div>
+                            <h3 class="project-title">Pixel Predict</h3>
+                            <p class="project-description">
+                                Handwritten digit recognition system achieving 97% accuracy 
+                                using deep learning and computer vision techniques.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Deep Learning</span>
+                                <span class="tag">Computer Vision</span>
+                                <span class="tag">97% Accuracy</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="project-links">
+                                <a href="https://github.com/kov191104/Pixel-Predict" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <!-- <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="data web">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="project-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3 class="project-title">Zomato Dine Scope</h3>
+                            <p class="project-description">
+                                Comprehensive data cleaning and restaurant insight dashboard 
+                                providing actionable business intelligence for food industry.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Data Cleaning</span>
+                                <span class="tag">Dashboard</span>
+                                <span class="tag">Business Intelligence</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="project-links">
+                                <a href="https://github.com/kov191104/Zomato-DineScope" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <!-- <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-categories">
+                    <div class="skill-category">
+                        <h3 class="category-title">Programming</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <span class="skill-name">Python</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-java"></i>
+                                </div>
+                                <span class="skill-name">Java</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-r-project"></i>
+                                </div>
+                                <span class="skill-name">R</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <span class="skill-name">C</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="category-title">Web Development</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <span class="skill-name">HTML</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <span class="skill-name">CSS</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <span class="skill-name">React.js</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-node-js"></i>
+                                </div>
+                                <span class="skill-name">Express.js</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="82"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="category-title">Database & Tools</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <span class="skill-name">MySQL</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <span class="skill-name">MongoDB</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <span class="skill-name">Power BI</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-calculator"></i>
+                                </div>
+                                <span class="skill-name">MATLAB</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="78"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <span class="skill-name">GitHub</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="category-title">Soft Skills</h3>
+                        <div class="soft-skills">
+                            <div class="soft-skill">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <span>Collaboration</span>
+                            </div>
+                            <div class="soft-skill">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-crown"></i>
+                                </div>
+                                <span>Leadership</span>
+                            </div>
+                            <div class="soft-skill">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <span>Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Ready to bring your ideas to life? Let's connect!</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <!-- <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <div class="btn-ripple"></div>
+                        </button>
+                    </form> -->
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/kovarthanak/" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/kov191104" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">Built with ❤️ by Kovarthana K | 2025</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
