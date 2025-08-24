@@ -1,25 +1,43 @@
-# 🌐 Personal Portfolio Website
+# 🌐 Personal Portfolio Website  
 
-🚀 Welcome to my personal portfolio!  
-This website showcases my projects, skills, and experiences in **AI/ML, Data Science, and Design**.  
-It is designed to provide a smooth user experience with a modern UI.
+Welcome to my personal portfolio website!  
+This project showcases my work, skills, and projects with a clean and modern design.  
 
-## 🔗 Live Demo
-Check it out here: [Portfolio Website](https://bejewelled-gumption-b6b163.netlify.app/)
+🚀 **Live Demo**: [Click Here](https://bejewelled-gumption-b6b163.netlify.app/)  
 
-## 📌 Features
-- 🎨 Responsive and modern design  
-- 🧑‍💻 Projects and work showcased  
-- ⚡ Fast and deployed with Netlify  
-- ✨ Smooth animations and clean UI  
+---
 
-## 🛠️ Tech Stack
-- **Frontend:** HTML, CSS, JavaScript  
-- **Deployment:** Netlify  
+## 🎥 Preview  
 
-## 📂 Project Setup
-To run locally:
+<img src="K:\Downloads\portfolio_preview.mp4" alt="Portfolio Demo" width="800"/>
+
+---
+
+## ✨ Features  
+
+- Responsive design for all screen sizes 📱💻  
+- Smooth animations and transitions ✨  
+- Dedicated sections for About, Projects, and Contact 📂  
+- Deployed on **Netlify** for easy access 🌍  
+
+---
+
+## 🛠️ Tech Stack  
+
+- **Frontend**: HTML, CSS, JavaScript  
+- **Deployment**: Netlify  
+
+---
+
+## ⚙️ Setup & Installation  
+
+To run this project locally:  
+
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
-open index.html
+# Clone the repository
+git clone https://github.com/your-username/your-repo-name.git  
+
+# Navigate to the project folder
+cd your-repo-name  
+
+# Open index.html in your browser
