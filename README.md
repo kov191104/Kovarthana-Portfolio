@@ -7,11 +7,7 @@ This project showcases my work, skills, and projects with a clean and modern des
 
 ---
 
-## 🎥 Preview  
 
-<img src="./portfolio_preview.gif" alt="Portfolio Demo" width="800"/>
-
----
 
 ## ✨ Features  
 
