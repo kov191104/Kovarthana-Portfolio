@@ -9,7 +9,7 @@ This project showcases my work, skills, and projects with a clean and modern des
 
 ## 🎥 Preview  
 
-<img src="K:\Downloads\portfolio_preview.mp4" alt="Portfolio Demo" width="800"/>
+<img src="./portfolio_preview.gif" alt="Portfolio Demo" width="800"/>
 
 ---
 
